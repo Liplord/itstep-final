@@ -714,7 +714,7 @@ header {
   height: 552px;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 80px;
   margin-top: 40px;
 }
 
@@ -1241,6 +1241,8 @@ header {
 .questions {
     height: 741px;
     padding-top: 40px;
+    background: rgb(71, 84, 235);
+    background: linear-gradient(52deg, rgba(71, 84, 235, 1) 0%, rgba(127, 135, 241, 1) 2%, rgba(172, 177, 246, 1) 6%, rgba(218, 220, 251, 1) 10%, rgba(242, 243, 254, 1) 18%, rgba(255, 255, 255, 1) 28%, rgba(255, 255, 255, 1) 79%, rgba(232, 216, 240, 1) 84%, rgba(226, 206, 236, 1) 88%, rgba(212, 182, 227, 1) 92%, rgba(188, 141, 211, 1) 96%, rgba(175, 119, 202, 1) 99%, rgba(134, 51, 176, 1) 100%);
     .title {
         font-size: 18px;
         margin-left: 20px;
