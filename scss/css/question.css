@@ -1,0 +1,15 @@
+.questions {
+  width: 1393px;
+  height: 784px;
+  background: rgb(71, 84, 235);
+  background: linear-gradient(52deg, rgb(71, 84, 235) 0%, rgb(127, 135, 241) 2%, rgb(172, 177, 246) 6%, rgb(218, 220, 251) 10%, rgb(242, 243, 254) 18%, rgb(255, 255, 255) 28%, rgb(255, 255, 255) 79%, rgb(232, 216, 240) 84%, rgb(226, 206, 236) 88%, rgb(212, 182, 227) 92%, rgb(188, 141, 211) 96%, rgb(175, 119, 202) 99%, rgb(134, 51, 176) 100%);
+}
+
+.questions__main__card {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: -2px 4px 20px 0px rgba(25, 25, 25, 0.03);
+  -webkit-backdrop-filter: blur(120px);
+          backdrop-filter: blur(120px);
+}/*# sourceMappingURL=question.css.map */

@@ -1,0 +1,18 @@
+.price__main {
+  width: 1344px;
+  height: 552px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price__main__card {
+  width: 318px;
+  height: 552px;
+}
+
+.price__main__card__top {
+  width: 203px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*# sourceMappingURL=price.css.map */

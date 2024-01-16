@@ -1,0 +1,24 @@
+.process {
+  height: 800px;
+  background: #f8f9fe;
+  background: linear-gradient(35deg, #f8f9fe 68%, #dcdffb 71%, #d4d7fa 75%, #b7bcf7 80%, #9ba2f4 83%, #9ba2f4 85%, #9ba2f4 88%, #858df2 90%, #6e78ef 92%, #5c68ed 94%, #5c62e9 96%, #5c49d7 98%, #8633b0 100%);
+}
+
+.process__main {
+  margin-top: 41px;
+  width: 1280px;
+  display: flex;
+  margin: auto;
+}
+
+.process__main__info__top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.process__main__info__top__line {
+  width: 24px;
+  height: 1px;
+}
+/*# sourceMappingURL=process.css.map */

@@ -1,0 +1,39 @@
+@import "./base/reset.scss";
+@import "./base/vars.scss";
+@import "./base/mixins.scss";
+@import "./blocks/header.scss";
+@import "./blocks/reg.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/process.scss";
+@import "./blocks/price.scss"; 
+@import "./blocks/review.scss"; 
+@import "./blocks/sale.scss"; 
+@import "./blocks/question.scss"; 
+@import "./blocks/feedback.scss"; 
+@import "./blocks/footer.scss"; 
+
+body {
+    background-color: $main-bg;
+    margin-top: 24px;
+    margin-bottom: 24px ;
+    margin: auto;
+}
+
+.container {
+    max-width: 1392px;
+    margin: auto;
+}
+
+.title {
+    @include text($text-color, $main-font, 36px, none, 500, 112%, none);
+}   
+
+@media screen and (max-width: 400px) {
+    .container{
+        max-width: 359px;
+        margin: auto;
+    }
+    body{
+        margin: auto;
+    }
+}

@@ -1,0 +1,92 @@
+.questions {
+    height: 784px;
+    padding-top: 80px;
+    background: rgb(71, 84, 235);
+    background: linear-gradient(52deg, rgba(71, 84, 235, 1) 0%, rgba(127, 135, 241, 1) 2%, rgba(172, 177, 246, 1) 6%, rgba(218, 220, 251, 1) 10%, rgba(242, 243, 254, 1) 18%, rgba(255, 255, 255, 1) 28%, rgba(255, 255, 255, 1) 79%, rgba(232, 216, 240, 1) 84%, rgba(226, 206, 236, 1) 88%, rgba(212, 182, 227, 1) 92%, rgba(188, 141, 211, 1) 96%, rgba(175, 119, 202, 1) 99%, rgba(134, 51, 176, 1) 100%);
+
+}
+
+.questions__main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 25px;
+}
+
+.questions__main__card {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: -2px 4px 20px 0px rgba(25, 25, 25, 0.03);
+    backdrop-filter: blur(120px);
+    max-width: 1344px;
+}
+
+.questions__title {
+    margin-left: 56px;
+    margin-bottom: 40px;
+}
+
+.questions__main__card__top {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.50);
+    @extend %flex-secondary;
+    justify-content: space-between;
+    max-width: 1344px;
+    padding: 24px 32px;
+
+    svg {
+        max-width: 48px;
+        height: 48px;
+        fill: rgba(255, 255, 255, 0.50);
+        stroke-width: 1px;
+        stroke: #FFF;
+        filter: drop-shadow(-2px 4px 20px rgba(25, 25, 25, 0.03));
+        transition: 0.3s;
+    }
+}
+
+.questions__main svg:hover {
+    cursor: pointer;
+    transform: rotate(45deg)
+}
+
+.questions__main__card__bottom {
+    @include text($secondary-color, $main-font, 18px, none, 400, 135%, none);
+    padding: 16px 48px 24px 24px;
+}
+
+@media screen and (max-width: 400px) {
+    .questions {
+        height: 741px;
+        padding-top: 40px;
+
+        .title {
+            font-size: 18px;
+        }
+    }
+
+    .questions__main{
+        margin: 0 8px;
+    }
+
+    .questions__main__card__top {
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.50);
+        @extend %flex-secondary;
+        justify-content: space-between;
+        height: 80px;
+        padding: 24px 16px 23px 16px;
+        .title{
+            font-size: 26px;
+        }
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .questions__main__card__bottom {
+        font-size: 14px;
+        padding: 16px 24px ;
+    }
+}

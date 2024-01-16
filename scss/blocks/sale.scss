@@ -1,0 +1,146 @@
+.sale {
+    max-width: 1393px;
+    height: 640px;
+    background-color: $secondary-bg;
+    @extend %flex-secondary;
+    gap: 100px;
+}
+
+.sale__img {
+    img {
+        max-width: 530px;
+        height: 440px;
+        animation-name: sales;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 628px;
+    height: 640px;
+    margin-left: 56px;
+
+}
+
+@keyframes sales {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.sale__info {
+    max-width: 628px;
+    height: 362px;
+}
+
+.sale__info__title {
+    @include text($text-color, $main-font, 56px, none, 500, 125%, none);
+}
+
+.sale__info__email {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: var(--background, #F2F2F2);
+    max-width: 465px;
+    height: 64px;
+    margin: 40px 0 16px 0;
+
+    input {
+        height: 64px;
+        max-width: 314px;
+        border-radius: 16px;
+        background: var(--background, #F2F2F2);
+        padding-left: 16px;
+        outline: none;
+
+        ::placeholder {
+            @include text($text-color, $main-font, 18px, none, 400, 135%, none);
+        }
+    }
+}
+
+.sale__info__email-btn {
+    padding: 12px 24px;
+    border-radius: 16px;
+    background: var(--Color-Blue, #4754EB);
+    transition: 0.3s;
+
+    p {
+        @include text($secondary-bg, $main-font, 18px, none, 500, 135%, none);
+    }
+}
+
+.sale__info__email-btn:hover {
+    cursor: pointer;
+}
+
+.sale__info__discription {
+    @include text($small-color, $main-font, 12px, none, 400, 135%, none);
+    max-width: 354px;
+
+    span {
+        @include text($accent-color, $main-font, 12px, none, 400, 135%, none);
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .sale {
+        height: 730px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sale__img {
+        width: 356.542px;
+        height: 363.355px;
+        margin-left: 0;
+        margin-top: 40px;
+
+        img {
+            width: 356.542px;
+            height: 280.355px;
+            margin-left: 0;
+        }
+    }
+
+    @keyframes sales {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    .sale__info {
+        max-width: 320px;
+        height: 279px;
+    }
+
+    .sale__info__title {
+        font-size: 36px;
+    }
+
+    .sale__info__email {
+        width: 320px;
+        height: 56px;
+
+        input {
+            height: 56px;
+            max-width: 160px;
+            ::placeholder {
+                font-size: 14px;
+            }
+        }
+    }
+}

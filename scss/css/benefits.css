@@ -1,0 +1,19 @@
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 480px;
+}
+
+.benefits__main {
+  display: grid;
+  grid-template-columns: 437.3px 437.3px 437.3px;
+  grid-template-rows: 40px 240px;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.benefits__main__title {
+  grid-column: 1/-1;
+}
+/*# sourceMappingURL=benefits.css.map */
