@@ -867,6 +867,10 @@ header {
     margin-left: 15px;
     gap: 8px;
   }
+
+  .price__main{
+        gap: 16px;
+    }
   .price__main__card__benefit-secondary {
     font-size: 13px;
     width: 228px;
@@ -1149,6 +1153,7 @@ header {
   border-radius: 16px;
   background: var(--Color-Blue, #4754EB);
   transition: 0.3s;
+  margin-left: 120px;
 }
 .sale__info__email-btn p {
   color: #FFF;
