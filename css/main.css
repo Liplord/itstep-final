@@ -636,6 +636,10 @@ header {
     letter-spacing: none;
     margin-left: 20px;
   }
+  .process__main__info__btn:hover {
+  transform: scale(1);
+  cursor: pointer;
+}
   .process__main__img img {
     width: 343px;
     height: 330px;
