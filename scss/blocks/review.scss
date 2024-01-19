@@ -12,9 +12,9 @@
     margin-top: 40px;
 }
 
-.review__main__card {
+.review__main-card {
     max-width: 628px;
-    height: 240px;
+    height: 270px;
     border-radius: 16px;
     position: absolute;
     border: 1px solid rgba(255, 255, 255, 0.75);
@@ -24,37 +24,37 @@
     transition: 0.3s;
 }
 
-.review__main__card:hover {
+.review__main-card:hover {
     transform: scale(1.1);
     z-index: 6;
 }
 
-.review__main__card__info {
+.review__main-card-info {
     @extend %flex-secondary;
     justify-content: space-between;
     padding: 16px 24px 16px 16px;
 }
 
-.review__main__card__info__user {
+.review__main-card-info-user {
     @extend %flex-secondary;
 }
 
-.review__main__card__info__user-avatar {
+.review__main-card-info-user-avatar {
     max-width: 64px;
     height: 64px;
     border-radius: 50%;
 }
 
-.review__main__card__info__user-name {
+.review__main-card-info-user-name {
     margin-left: 16px;
     @include text($text-color, $main-font, 24px, none, 500, 100%, none);
 }
 
-.review__main__card__info-date {
+.review__main-card-info-date {
     @include text($secondary-color, $main-font, 18px, none, 400, 135%, none);
 }
 
-.review__main__card__content {
+.review__main-card-content {
     display: flex;
     padding: 16px 24px;
     flex-direction: column;
@@ -62,7 +62,7 @@
     gap: 16px;
 }
 
-.review__main__card__content-review {
+.review__main-card-content-review {
     max-width: 580px;
     @include text($secondary-color, $main-font, 18px, none, 400, 135%, none);
 }
@@ -72,11 +72,9 @@
     padding: 12px 24px;
     border-radius: 16px;
     background: $secondary-bg;
-
     p {
         @include text($accent-color, $main-font, 18px, none, 500, 135%, none);
     }
-
     position: absolute;
     bottom: 0;
     right: 0;
@@ -90,30 +88,26 @@
     border-radius: 30px;
 }
 
-.review__main__card-semen {
+.review__main-card-semen {
     left: 326px;
     z-index: 4;
-
 }
 
-.review__main__card-inok {
+.review__main-card-inok {
     bottom: 128px;
     right: 0;
     z-index: 3;
-
 }
 
-.review__main__card-serega {
+.review__main-card-serega {
     bottom: 0;
     left: 164px;
     z-index: 2;
-
 }
 
-.review__main__card-olezh {
+.review__main-card-olezh {
     top: 56px;
     z-index: 1;
-
 }
 
 @media screen and (max-width: 400px) {
@@ -124,59 +118,47 @@
         background: rgb(255, 255, 255);
         background: linear-gradient(86deg, rgba(255, 255, 255, 1) 11%, rgba(148, 124, 204, 1) 79%, rgba(133, 106, 197, 1) 89%, rgba(117, 86, 189, 1) 96%, rgba(110, 77, 186, 1) 98%, rgba(88, 51, 176, 1) 100%);
     }
-
     .review .title {
         font-size: 18px;
         margin-left: 20PX;
     }
-
-
     .review__main {
         position: static;
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
-
-
-    .review__main__card {
+    .review__main-card {
         position: static;
         margin: 0 8px;
         background-color: $secondary-bg;
     }
-
-    .review__main__card__info {
+    .review__main-card-info {
         padding: 12px 16px;
         gap: 78px;
-
         img {
             width: 48px;
             height: 48px;
         }
     }
-
-    .review__main__card__info__user-name {
+    .review__main-card-info-user-name {
         margin-left: 16px;
         line-height: 125%;
         font-size: 18px;
     }
-
-    .review__main__card__info-date {
+    .review__main-card-info-date {
         font-size: 14px;
     }
-
-    .review__main__card__content-review {
+    .review__main-card-content-review {
         width: 295px;
         font-size: 14px;
     }
-
-    .review__main__card__content-stars {
+    .review__main-card-content-stars {
         svg {
             width: 16px;
             height: 16px;
         }
     }
-
     .review__main-btn {
         display: none;
     }

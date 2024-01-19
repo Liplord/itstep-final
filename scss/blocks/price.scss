@@ -1,7 +1,6 @@
 .price {
     padding: 80px 23px 161px 24px;
     background-color: $secondary-bg;
-
     .title {
         margin-left: 32px;
     }
@@ -12,13 +11,14 @@
     height: 552px;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 80px;
     margin-top: 40px;
 }
 
-.price__main__card {
+.price__main-card {
     max-width: 318px;
-    height: 630px;
+    border-radius: 16px;
+    height: 660px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -28,43 +28,51 @@
     backdrop-filter: blur(12px);
 }
 
-.price__main__card__top {
+.price__main-card-top {
     padding: 20px 0 0 24px;
     margin-bottom: 28px;
+    display: block
 }
 
-.price__main__card__top-name {
+.price__main-card-top-name {
     @include text($text-color, $main-font, 24px, none, 500, 100%, none);
     margin-bottom: 8px
 }
 
-.price__main__card__top__price-accent {
+.price__main-card-top-price-accent {
     @include text($accent-color, $main-font, 24px, none, 500, 100%, none);
 }
 
-.price__main__card__top__price-secondary {
+.price__main-card-top-price-secondary {
     @include text($secondary-color, $main-font, 24px, none, 500, 100%, none);
 }
 
-.price__main__card__top__price {
+.price__main-card-benefit-img-cancel {
+    margin-left: 24px;
+    margin-right: 12px;
+}
+
+.price__main-card-benefit-plus {
+    margin-left: 15px;
+}
+
+.price__main-card-top-price {
     max-width: 203px;
     display: flex;
+    gap: 4px;
 }
 
-.price__main__card__benefit {
+.price__main-card-benefit {
     display: flex;
     max-width: 280px;
-    gap: 16px;
-    margin-left: 24px;
 }
 
-.price__main__card__benefit-img {
+.price__main-card-benefit-img {
     max-width: 32px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     svg {
         border: 1px solid rgba(255, 255, 255, 0.75);
         background: rgba(255, 255, 255, 0.50);
@@ -73,12 +81,12 @@
     }
 }
 
-.price__main__card__benefit-secondary {
+.price__main-card-benefit-secondary {
     @include text($secondary-color, $main-font, 18px, none, 400, 135%, none);
     max-width: 224px;
 }
 
-.price__main__card-button {
+.price__main-card-button {
     border-radius: 16px;
     max-width: 270px;
     height: 56px;
@@ -89,57 +97,51 @@
     box-shadow: 0px 4px 20px 0px rgba(25, 25, 25, 0.05);
     backdrop-filter: blur(12px);
     transition: 0.3s;
-
     p {
         @include text($accent-color, $main-font, 18px, none, 500, 100%, none);
     }
 }
 
-.price__main__card-button:hover {
+.price__main-card-button:hover {
     cursor: pointer;
     transform: scale(1.1);
+    border: 1px solid rgb(68, 68, 177);
 }
 
 @media screen and (max-width: 400px) {
     .price {
         height: 1943px;
         padding: 40px 19px 40px 20px;
-
         .title {
             font-size: 18px;
             margin-left: 0;
         }
     }
-
-    .price__main__card {
+    .price__main {
+        gap: 16px;
+    }
+    .price__main-card {
         width: 320px;
         height: 438px;
     }
-
-
-    .price__main__card__top {
+    .price__main-card-top {
         padding: 15px 132px 15px 16px;
-
         p {
             font-size: 18px;
         }
     }
-
-    .price__main__card__benefit-img-cancel{
-        margin-right: 4px;
+    .price__main-card-benefit-img-cancel {
+        margin-right: 19px;
     }
-
-    .price__main__card__benefit-plus {
+    .price__main-card-benefit-plus {
         margin-left: 15px;
         gap: 8px;
     }
-
-    .price__main__card__benefit-secondary {
+    .price__main-card-benefit-secondary {
         font-size: 13px;
         width: 228px;
     }
-
-    .price__main__card-button {
+    .price__main-card-button {
         width: 288px;
         height: 48px;
         padding: 10.5px 24px;

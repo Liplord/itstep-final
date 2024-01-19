@@ -20,13 +20,16 @@ header {
     gap: 24px;
     a {
         @include text($secondary-color, $main-font, 18px, none, 400, 135%, none);
+        transition: 0.5s;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 
 .header__nav-functional-lang {
     gap: 2px;
-
-    :hover {
+     :hover {
         cursor: pointer;
     }
 }
@@ -50,11 +53,9 @@ header {
     max-width: 220px;
     padding: 12px 24px;
     transition: 0.3s;
-
     p {
         @include text($secondary-bg, $main-font, 18px, none, 500, 135%, none);
     }
-
 }
 
 .header__nav-functional-button:hover {
@@ -68,29 +69,27 @@ header {
     @extend %flex-secondary;
 }
 
-.header__nav__hidden{
+.header__nav-hidden {
     display: none;
-} 
-// .header__nav__hidden-profile
-// .header__nav__hidden-burger
+}
 
 @media screen and (max-width: 400px) {
-    .header__nav__hidden{
+    .header__nav-hidden {
         display: block;
     }
-    .header__nav-ul{
+    .header__nav-ul {
         display: none;
     }
-    .header__nav-functional-lang{
+    .header__nav-functional-lang {
         display: none;
     }
-    .header__nav-name{
+    .header__nav-name {
         @include text($accent-color, $main-font, 14px, none, 500, 135%, none);
     }
-    .header__nav-functional-button{
+    .header__nav-functional-button {
         display: none;
     }
-    .header__nav{
+    .header__nav {
         height: 64px;
         padding: 0 20px;
         justify-content: space-between;
@@ -98,5 +97,4 @@ header {
     .header__nav-name {
         padding-right: 141px;
     }
-    
 }

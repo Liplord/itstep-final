@@ -14,12 +14,12 @@
     row-gap: 40px;
 }
 
-.benefits__main__title {
+.benefits__main-title {
     grid-column: 1/-1;
     margin-left: 32px;
 }
 
-.benefits__main__card {
+.benefits__main-card {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -28,24 +28,30 @@
     background: rgba(255, 255, 255, 0.50);
     box-shadow: 0px 4px 20px 0px rgba(25, 25, 25, 0.05);
     backdrop-filter: blur(12px);
+    transition: 0.5s;
 }
 
-.benefits__main__card__title {
+.benefits__main-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 1px solid rgb(88, 106, 212);
+}
+
+.benefits__main-card-title {
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 12px 80px 12px 16px;
-
     img {
         width: 56px;
     }
 }
 
-.benefits__main__card__title-p {
+.benefits__main-card-title-p {
     @include text($text-color, $main-font, 24px, none, 500, 100%, none);
 }
 
-.benefits__main__card-secondary-p {
+.benefits__main-card-secondary-p {
     @include text($secondary-color, $main-font, 18px, none, 400, 135%, none);
     margin: 0 24px;
 }
@@ -55,32 +61,29 @@
         width: 359px;
         height: 668px;
     }
-
     .benefits__main {
         grid-template-columns: 343px;
         grid-template-rows: 23px 168px 168px 168px;
         row-gap: 16px;
     }
-
-    .benefits__main__title h3 {
+    .benefits__main-title h3 {
         @include text($text-color, $main-font, 18px, none, 500, 125%, none);
         padding-bottom: 13px;
     }
-
-    .benefits__main__card__title {
+    .benefits__main-card-title {
         padding-right: 60px;
         img {
             width: 36px;
         }
-        p{
+        p {
             @include text($text-color, $main-font, 18px, none, 500, 125%, none);
         }
     }
-    .benefits__main__card-secondary-p{
+    .benefits__main-card-secondary-p {
         font-size: 14px;
         margin-bottom: 4px;
     }
-    .benefits__main__card{
+    .benefits__main-card {
         gap: 12px;
     }
 }

@@ -5,17 +5,16 @@
 @import "./blocks/reg.scss";
 @import "./blocks/benefits.scss";
 @import "./blocks/process.scss";
-@import "./blocks/price.scss"; 
-@import "./blocks/review.scss"; 
-@import "./blocks/sale.scss"; 
-@import "./blocks/question.scss"; 
-@import "./blocks/feedback.scss"; 
-@import "./blocks/footer.scss"; 
-
+@import "./blocks/price.scss";
+@import "./blocks/review.scss";
+@import "./blocks/sale.scss";
+@import "./blocks/question.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/footer.scss";
 body {
     background-color: $main-bg;
     margin-top: 24px;
-    margin-bottom: 24px ;
+    margin-bottom: 24px;
     margin: auto;
 }
 
@@ -26,14 +25,14 @@ body {
 
 .title {
     @include text($text-color, $main-font, 36px, none, 500, 112%, none);
-}   
+}
 
 @media screen and (max-width: 400px) {
-    .container{
+    .container {
         max-width: 359px;
         margin: auto;
     }
-    body{
+    body {
         margin: auto;
     }
 }

@@ -11,24 +11,28 @@ footer {
     max-width: 192px;
 }
 
-.footer__authors__name {
+.footer__authors-name {
     @include text($secondary-bg, $main-font, 18px, none, 400, 135%, none);
     margin-bottom: 3px;
 }
 
-.footer__authors__copyrights {
+.footer__authors-copyrights {
     @include text(#D9D9D9, $main-font, 16px, none, 400, 135%, none);
 }
 
 .footer__comeback {
     display: flex;
-    p{
+    p {
         @include text($secondary-bg, $main-font, 18px, none, 400, 135%, none);
     }
     gap: 8px;
+    a {
+        display: flex;
+        gap: 5px;
+    }
 }
 
-.footer__comeback:hover{
+.footer__comeback:hover {
     cursor: pointer;
 }
 
@@ -36,7 +40,7 @@ footer {
     footer {
         padding: 0 21px 0 19px;
     }
-    .footer__comeback__hide{
+    .footer__comeback-hide {
         display: none;
     }
 }

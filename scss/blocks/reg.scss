@@ -17,7 +17,7 @@
     margin-bottom: 40px;
 }
 
-.reg__info__email {
+.reg__info-email {
     width: 465px;
     height: 64px;
     border-radius: 16px;
@@ -25,7 +25,7 @@
     background-color: rgba(255, 255, 255, 0.50);
 }
 
-.reg__info__email-input {
+.reg__info-email-input {
     background-color: rgba(255, 255, 255, 0.50);
     outline: none;
     max-width: 314px;
@@ -33,23 +33,22 @@
     border-radius: 16px;
     padding-left: 16px;
     opacity: 0.7;
-
-    ::placeholder {
+     ::placeholder {
         @include text($text-color, $main-font, 18px, none, 400, 135%, none);
     }
 }
 
-.reg__info__email-button {
+.reg__info-email-button {
     border-radius: 16px;
     background-color: $secondary-bg;
     padding: 12px 24px;
-
+    margin-left: 120px;
     p {
         @include text($accent-color, $main-font, 18px, none, 500, 135%, none);
     }
 }
 
-.reg__info__email-button:hover {
+.reg__info-email-button:hover {
     cursor: pointer;
 }
 
@@ -65,8 +64,7 @@
 
 .reg__info-personal-accent {
     @include text(#505DEC, $main-font, 12px, none, 400, 135%, none);
-
-    :hover {
+     :hover {
         cursor: pointer;
     }
 }
@@ -78,7 +76,6 @@
     animation-name: reg-scroll;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-
     p {
         @include text($secondary-bg, $main-font, 16px, none, 400, 135%, none);
         margin-top: 6px;
@@ -93,74 +90,60 @@
     0% {
         transform: translateY(0px);
     }
-
     33% {
         transform: translateY(50px);
     }
-
     66% {
         transform: translateY(-50px);
     }
-
     100% {
         transform: translateY(0px);
     }
 }
 
-
-
 @media screen and (max-width: 400px) {
     .reg {
         flex-direction: column;
         padding-left: 0;
-
         img {
             width: 355px;
             height: 400px;
         }
     }
-
     .reg__info-h2 {
         width: 320px;
         @include text($text-color, $main-font, 36px, none, 500, 125%, none);
         margin: auto;
         margin-top: 40px;
     }
-
     .reg__img {
         max-width: 608px;
         height: 492px;
     }
-
     .reg__info-scroll {
         display: none;
     }
-
     .reg__info {
         max-width: 359px;
         height: 350px;
     }
-
-    .reg__info__email {
+    .reg__info-email {
         width: 320px;
         height: 56px;
         margin-top: 40px;
     }
-
-    .reg__info__email-input {
+    .reg__info-email-input {
         height: 56px;
         max-width: 170px;
-
-        ::placeholder {
+         ::placeholder {
             padding-top: 18px;
         }
     }
-
-    .reg__info__email-button {
+    .reg__info-email-button {
         padding: 10.5px 24px;
+        margin-left: 0;
     }
-
-    .reg__info-personal{
+    .reg__info-personal {
         margin-bottom: 0;
     }
 }
